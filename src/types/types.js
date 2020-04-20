@@ -1,0 +1,7 @@
+export const BOOKS_REQUEST = 'BOOKS_REQUEST'
+export const BOOKS_SUCCESS = 'BOOKS_SUCCESS'
+export const BOOKS_FAIL = 'BOOKS_FAIL'
+
+export const SPINNER_ACTIVE = 'SPINNER_ACTIVE'
+
+export const LOCALE_SET = 'LOCALE_SET'

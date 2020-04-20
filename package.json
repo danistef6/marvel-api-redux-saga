@@ -1,0 +1,77 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@formatjs/intl-relativetimeformat": "^4.5.11",
+    "axios": "^0.19.0",
+    "classnames": "^2.2.6",
+    "clsx": "^1.0.4",
+    "crypto-js": "^4.0.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.1",
+    "normalizr": "^3.4.1",
+    "rc-time-picker": "^3.7.3",
+    "react": "^16.8.6",
+    "react-app-env": "^1.2.3",
+    "react-aria-modal": "^4.0.0",
+    "react-dom": "^16.8.6",
+    "react-intl": "^4.3.1",
+    "react-modal": "^3.11.2",
+    "react-redux": "^7.1.0",
+    "react-responsive": "^8.0.3",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "react-slick": "^0.25.2",
+    "react-toastify": "^5.5.0",
+    "react-tooltip": "^4.2.3",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.0.5",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "seamless-immutable": "^7.1.4"
+  },
+  "scripts": {
+    "start": "react-app-env --env-file=config/dev.env start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "lint-staged": "^9.4.1",
+    "prettier": "^1.18.2"
+  },
+  "proxy": "http://localhost:8080"
+}
