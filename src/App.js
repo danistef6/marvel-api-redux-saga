@@ -6,8 +6,8 @@ import { connect } from 'react-redux'
 import { IntlProvider } from 'react-intl'
 import 'react-toastify/dist/ReactToastify.css'
 // pages
-import PageNotFound from './components/pages/pageNotFound'
-import ExamplePage from './components/pages/examplePage/examplePage'
+import Main from './components/pages/main';
+import MainDetail from './components/pages/mainDetail';
 
 // components
 // import ToastContainerCO from './components/commons/toast component here ' extra practice
@@ -16,8 +16,10 @@ import './styles/app.scss'
 
 class App extends React.Component {
   render() {
-    const { location, spinner, lang } = this.props
+    const { location, lang } = this.props
+    console.log("Esto es lo que llega",lang,"******",location);
     const messages = localeData[lang] || localeData.en
+    console.log("que trae",messages,"esta variable",localeData[lang]);
     return (
       <div>
         {/* {spinner && <Loading  />}  // extra practice create a Loading component general  */} 
@@ -28,9 +30,9 @@ class App extends React.Component {
                 location={location}
                 path="/"
                 exact
-                component={ExamplePage}
+                component={Main}
               />
-              <Route component={PageNotFound} />
+              <Route exact path="/Detail/:Id" component={MainDetail} />
             </Switch>
             {/* <ToastContainerCO className="toast-container" />  extra practice create a toast componete to feedback */}
           </div>

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshot Comprobar la UI del componente Header 1`] = `
+<nav
+  className="sc-bdVaJa dojfSo"
+>
+  <a
+    className="sc-bwzfXH hEEFWg"
+  />
+</nav>
+`;

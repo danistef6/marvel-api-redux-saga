@@ -7,6 +7,7 @@ export const localeSet = payload => ({
 
 export const setLocale = (lang, store = null) => {
   localStorage.alhubLang = lang
+  console.log("estas aqui",lang)
   if (store) {
     store.dispatch(localeSet(lang))
     return true
