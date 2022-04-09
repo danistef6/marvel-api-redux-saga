@@ -15,7 +15,7 @@
     "enzyme-adapter-react-16": "1.15.2 ",
     "formik": "^2.1.4",
     "jest": "24.7.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-sass": "^4.13.1",
     "normalizr": "^3.4.1",
     "rc-time-picker": "^3.7.3",
